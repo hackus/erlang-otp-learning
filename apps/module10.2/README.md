@@ -13,6 +13,8 @@ docker compose up -d
 docker attach module10_2
 .
 in erlang console:
+{% raw %}
+```erlang
 > application:start(module10_2).
 > supervisor:which_children(module10_2_sup).
 
@@ -23,6 +25,7 @@ in erlang console:
 > exit(whereis(ets_advanced_counter_store), kill).
 > whereis(ets_advanced_counter_store).
 > ets_advanced_counter_store:select([{{'$1','$2'},[],['$_']}]).
+{% endraw %}
 
 Every time you see:
 {undef, [{some_module,start_link,[],[]}, ...]}

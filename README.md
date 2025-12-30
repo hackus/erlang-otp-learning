@@ -1,7 +1,7 @@
 ![Erlang](https://img.shields.io/badge/Erlang-OTP-blue)
 ![Docker](https://img.shields.io/badge/Docker-enabled-blue)
 
-# Erlang Cheat Sheet & Learning Notes
+# Erlang Cheat Sheet
 
 I started exploring Erlang mainly to better understand the actor model. Very quickly, I realized that in Erlang this model is so deeply integrated into the language and runtime that it is rarely explicit or “observable”, it simply is the way the system works.
 
@@ -170,3 +170,5 @@ Although automated tests are usually the most effective learning tool, some unce
 
 I’m satisfied with how far this project went.
 From here, the sandbox is ready - future work is about refinement, tuning, and real-world experience. 
+
+[The project](https://github.com/hackus/erlang-otp-learning)
