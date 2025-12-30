@@ -1,3 +1,6 @@
+![Erlang](https://img.shields.io/badge/Erlang-OTP-blue)
+![Docker](https://img.shields.io/badge/Docker-enabled-blue)
+
 # Erlang Cheat Sheet & Learning Notes
 
 I started exploring Erlang mainly to better understand the actor model. Very quickly, I realized that in Erlang this model is so deeply integrated into the language and runtime that it is rarely explicit or “observable”, it simply is the way the system works.
@@ -58,8 +61,8 @@ This analogy is imperfect, but it highlights why Erlang feels unusually complete
 
 All of this reflects a learning journey, not production experience.
 
-I have not yet delivered a production system in Erlang. While following this ChatGPT-generated course, I ran into real issues, especially around library versions and integrations. 
-Those moments forced me to debug, research, and iterate.
+I have not yet delivered a production system in Erlang. While following this ChatGPT-generated course, I ran into real issues, especially around library versions and integrations.
+Those moments involved repeated debugging and research cycles, which can become tedious over time.
 
 ## Course Philosophy
 
