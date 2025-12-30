@@ -1,0 +1,9 @@
+{application, module2,
+  [
+    {description, "Module 2 – Basic Math Homework"},
+    {vsn, "0.1.0"},
+    {modules, [basic_math]},
+    {registered, []},
+    {applications, [kernel, stdlib]},
+    {env, []}
+  ]}.

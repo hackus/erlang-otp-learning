@@ -1,0 +1,6 @@
+services:
+  module11_2:
+    build: .
+    container_name: module11_2
+    ports:
+      - "8080:8080"

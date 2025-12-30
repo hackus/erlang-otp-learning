@@ -1,0 +1,9 @@
+{application, module3,
+  [
+    {description, "Module 3 – Working with lists in Erlang"},
+    {vsn, "0.1.0"},
+    {modules, ['RecursionInErlang']},
+    {registered, []},
+    {applications, [kernel, stdlib]},
+    {env, []}
+  ]}.

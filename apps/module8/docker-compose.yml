@@ -1,0 +1,23 @@
+services:
+
+  node1:
+    build: .
+    container_name: node1
+    environment:
+      - RELEASE_NODE=node1
+      - RELEASE_COOKIE=choco
+    networks:
+      erlnet:
+
+  node2:
+    build: .
+    container_name: node2
+    environment:
+      - RELEASE_NODE=node2
+      - RELEASE_COOKIE=choco
+    networks:
+      erlnet:
+
+networks:
+  erlnet:
+    driver: bridge

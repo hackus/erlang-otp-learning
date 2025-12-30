@@ -1,0 +1,18 @@
+# Erlang / rebar3
+_build/
+rebar3.crashdump
+erl_crash.dump
+*.beam
+
+# Mnesia
+Mnesia*/
+schema.DAT
+
+# Docker
+*.log
+
+# OS / IDE
+.DS_Store
+.idea/
+*.iml
+.vscode/

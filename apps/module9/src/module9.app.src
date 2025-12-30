@@ -1,0 +1,13 @@
+{application, module9,
+  [
+    {description, "Module 9 – Chat between nodes"},
+    {vsn, "0.1.0"},
+    {modules, [chat_app, chat_user]},
+    {registered, []},
+    {applications, [
+      kernel,
+      stdlib
+    ]},
+    {env, []},
+    {mod, {chat_app, []}}
+  ]}.

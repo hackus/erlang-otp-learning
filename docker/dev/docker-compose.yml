@@ -1,0 +1,17 @@
+services:
+  erlang:
+    container_name: erlang_homework_dev
+
+    build:
+      context: ../..
+      dockerfile: docker/dev/Dockerfile
+
+    working_dir: /app
+
+    volumes:
+      - ../../rebar.config:/app/rebar.config
+      - ../../apps:/app/apps
+
+    command: sh -c "rebar3 compile && rebar3 eunit"
+
+    tty: true

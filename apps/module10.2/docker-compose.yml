@@ -1,0 +1,6 @@
+services:
+  module10_2:
+    build: .
+    container_name: module10_2
+    tty: true
+    stdin_open: true

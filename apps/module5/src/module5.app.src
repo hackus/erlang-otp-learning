@@ -1,0 +1,9 @@
+{application, module5,
+  [
+    {description, "Module 5 – Concurency in Erlang"},
+    {vsn, "0.1.0"},
+    {modules, ['Concurency']},
+    {registered, []},
+    {applications, [kernel, stdlib]},
+    {env, []}
+  ]}.

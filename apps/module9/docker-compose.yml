@@ -1,0 +1,32 @@
+services:
+  node1:
+    build: .
+    container_name: node1
+    hostname: node1.local
+    environment:
+      - RELEASE_NODE=node1
+      - RELEASE_HOST=node1.local
+      - RELEASE_COOKIE=choco
+    networks:
+      - erlnet
+    expose:
+      - "9100-9105"
+      - "4369"
+
+  node2:
+    build: .
+    container_name: node2
+    hostname: node2.local
+    environment:
+      - RELEASE_NODE=node2
+      - RELEASE_HOST=node2.local
+      - RELEASE_COOKIE=choco
+    networks:
+      - erlnet
+    expose:
+      - "9100-9105"
+      - "4369"
+
+networks:
+  erlnet:
+    driver: bridge

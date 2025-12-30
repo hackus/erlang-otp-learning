@@ -1,0 +1,39 @@
+services:
+  node1:
+    build: .
+    container_name: chat12-node1
+    hostname: node1
+    environment:
+      MNESIA_MASTER: "true"
+      MNESIA_SCHEMA_NODE: chat1@node1
+      NODE_NAME: chat1
+      COOKIE: choco
+      PEERS: chat2@node2
+      MNESIA_DIR: /data/node1
+    networks:
+      - chatnet
+    volumes:
+      - mnesia-node1:/data/node1
+
+  node2:
+    build: .
+    container_name: chat12-node2
+    hostname: node2
+    environment:
+      MNESIA_SCHEMA_NODE: chat1@node1
+      NODE_NAME: chat2
+      COOKIE: choco
+      PEERS: chat1@node1
+      MNESIA_DIR: /data/node2
+    networks:
+      - chatnet
+    volumes:
+      - mnesia-node2:/data/node2
+
+networks:
+  chatnet:
+    driver: bridge
+
+volumes:
+  mnesia-node1:
+  mnesia-node2:

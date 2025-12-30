@@ -1,0 +1,2 @@
+-sname ${RELEASE_NODE}
+-setcookie ${RELEASE_COOKIE}

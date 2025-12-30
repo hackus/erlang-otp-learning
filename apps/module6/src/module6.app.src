@@ -1,0 +1,9 @@
+{application, module6,
+  [
+    {description, "Module 6 – Create a gen_server(service)"},
+    {vsn, "0.1.0"},
+    {modules, ['RunListServer']},
+    {registered, []},
+    {applications, [kernel, stdlib]},
+    {env, []}
+  ]}.
